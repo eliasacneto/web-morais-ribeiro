@@ -1,3 +1,21 @@
+document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+});
+
 document.getElementById("navMenuToggler")?.addEventListener("click", function () {
     const navMenu = document.getElementById("navMenu")
     navMenu?.classList.toggle("h-0")
