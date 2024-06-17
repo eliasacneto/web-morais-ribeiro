@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso time - Morais & Ribeiro</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1a827209e1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="font-marcellus">
+
+    <!-- Navbar -->
+    <div class="">
+        <!-- Mobile nav-->
+        <div class="flex fixed items-center z-40 bg-slate-950 w-screen lg:hidden px-6 py-3 shadow-md">
+            <a href="#" class="">
+                <img class="w-52" src="./assets/images/logo/mr-logo.jpg" alt="logo"></a>
+
+            <button id="navMenuToggler"
+                class="fixed flex items-center top-2 right-0 p-4 z-40 lg:hidden lg:bg-none  rounded-lg">
+                <i class="fa-solid fa-bars fa-2xl text-[#d9d9d9]"></i>
+            </button>
+            <hr class="divide-y divide-zinc-400" />
+        </div>
+
+        <header
+            class="fixed z-10 w-full h-12 md:h-24 px-8 md:px-12 lg:px-8 xl:px-28 flex gap-8 items-center font-marcellus bg-slate-950 text-zinc-300 antialiased font-bold shadow shadow-[#d9d9d9] ">
+            <a href="#" class="">
+                <img class="w-56 " src="./assets/images/logo/mr-logo.jpg" alt="logo"></a>
+            <div id="navMenu"
+                class="fixed lg:relative top-0 left-0 bg-slate-900 lg:bg-slate-950 bg-opacity-95 text-center overflow-hidden transition-all duration-500 flex flex-col lg:flex-row gap-8 items-center justify-center w-full h-0 opacity-0 z-10 lg:h-full lg:opacity-100 ">
+                <nav class="lg:flex-1 flex justify-end gap-8 flex-col lg:flex-row lg:ml-16 ">
+                    <a class="text-zinc-300 hover:text-zinc-400 transition-all duration-500"
+                        href="index.html">Início</a>
+                    <a class="text-zinc-300 hover:text-zinc-400  transition-all duration-500 px-"
+                        href="areas.html">Áreas de atuação</a>
+                    <a class="text-zinc-300 hover:text-zinc-400  transition-all duration-500"
+                        href="team.html">Profissionais</a>
+                    <a class="text-zinc-300 hover:text-zinc-400  transition-all duration-500" href="about.html">Sobre
+                        nós</a>
+                </nav>
+                <div class="flex items-center flex-col gap-5 lg:flex-row lg:gap-0 ">
+                    <a href="contact.html"
+                        class="bg-[#d9d9d9] font-bold text-zinc-900 py-3 px-10 rounded-tl-[1rem] rounded-br-[1rem] hover:bg-zinc-500 hover:text-white transition duration-500 hover:duration-500"
+                        onClick={closeMenu}>
+                        Contato
+                    </a>
+                </div>
+
+            </div>
+        </header>
+        <hr class="divide-y divide-zinc-400" />
+        <!-- End Navbar-->
+        <!--Section title-->
+        <div class="flex flex-col justify-center items-center bg-slate-900 h-80 mt-10">
+            <h1 class="text-white text-4xl lg:text-5xl mb-4">Nossos Profissionais</h1>
+            <p class="text-zinc-400 text-lg lg:w-[30rem] xl:w-[40rem] text-center">
+                Acreditamos no poder da nossa equipe e sabemos que nada se constrói sozinho
+            </p>
+        </div>
+        <!-- End Section title-->
+        <!-- Content -->
+        <div class="pt-[5rem] pb-[5rem]">
+            <div class="w-[80%] mx-auto mt-[1rem] flex flex-col">
+                <div class="md:p-[3rem]">
+                    <div class="flex flex-col md:flex-row items-center md:space-x-4">
+                        <div class="md:w-1/1">
+                            <img src="./assets/images/team/nicolly.svg" alt={name}
+                                class="hover:scale-105 hover:shadow-sm transition-all duration-500 " />
+                        </div>
+                        <div class="md:w-[80%] md:pl-8">
+                            <div class="space-y-2 text-center md:text-left">
+                                <h1 class="mt-5 text-[30px] text-[#21243D]">Dra. Nikolly Morais Silva</h1>
+                                <h3 class="text-xl">Sócia</h3>
+                                <p class="text-[17px] text-justify text-[#8B94A1]">
+                                    Dra. Nikolly Karoline Morais e Silva é uma advogada especializada em Direito Cível e
+                                    Tributário, com formação pela Faculdade do Ministério Público e pós-graduações em
+                                    Advocacia Cível e Direito Empresarial pela Faculdade Legale Educacional. Atualmente,
+                                    ela também cursa pós-graduação em Direito Tributário. Certificada em negociação e
+                                    elaboração de contratos, Dra. Nikolly possui ampla experiência em mediação de
+                                    conflitos. Ela é especialmente focada em tributação federal, repetições de indébito
+                                    e execuções fiscais, oferecendo uma advocacia proativa e estratégica para proteger
+                                    os interesses de seus clientes.
+                                </p>
+                                <p class="text-xl text-black">Redes sociais:</p>
+                                <div
+                                    class="flex justify-center pb-10 md:justify-start items-center text-[#CC926A] gap-4 ">
+
+                                    <a href="https://www.linkedin.com/in/nikollymorais/" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="fa-brands fa-linkedin fa-xl"></i>
+                                    </a>
+
+
+                                    <a href="https://www.instagram.com/nikollymoraisadv/" target="_blank">
+                                        <i class="fa-brands fa-instagram fa-xl"></i>
+                                    </a>
+
+                                    <a href={whatsappLink} target="_blank">
+                                        <i class="fa-brands fa-whatsapp fa-xl"></i>
+                                    </a>
+                                    <a href={whatsappLink} target="_blank">
+                                        <i class="fa-regular fa-envelope fa-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="md:p-[3rem]">
+                    <div class="flex flex-col md:flex-row items-center md:space-x-4">
+                        <div class="md:w-1/1">
+                            <img src="./assets/images/team/joao.svg" alt="Dr. João Pedro Ribeiro"
+                                class="hover:scale-105 hover:shadow-sm transition-all duration-500 " />
+                        </div>
+                        <div class="md:w-[80%] md:pl-8">
+                            <div class="space-y-2 text-center md:text-left">
+                                <h1 class="mt-5 text-[30px] text-[#21243D]">Dr. João Pedro Ribeiro</h1>
+                                <h3 class="text-xl">Sócio</h3>
+                                <p class="text-[17px] text-justify text-[#8B94A1]">
+                                    Dr. João Pedro Ribeiro é um advogado especializado em Direito do Trabalho e
+                                    Compliance, atendendo tanto empregados quanto empregadores. Com pós-graduação em
+                                    Direito do Trabalho, ele é reconhecido por sua habilidade em auxiliar empresas a
+                                    aderirem a regulamentos e padrões éticos, minimizando riscos legais. Dr. João possui
+                                    expertise em casos de danos morais e materiais, defendendo os interesses de seus
+                                    clientes com empatia e determinação para obter compensações justas. Ele também é
+                                    certificado em LGPD, assegurando que seus clientes cumpram as normas de proteção de
+                                    dados. Sua abordagem oferece orientação jurídica personalizada, ajustada às
+                                    necessidades específicas de cada cliente.
+                                </p>
+                                <p class="text-xl text-black">Redes sociais:</p>
+                                <div
+                                    class="flex justify-center pb-10 md:justify-start items-center text-[#CC926A] gap-4 ">
+
+                                    <a href="https://www.linkedin.com/in/joaopedrorrmoliveira" target="_blank">
+                                        <i class="fa-brands fa-linkedin fa-xl"></i>
+                                    </a>
+
+
+                                    <a href="https://www.instagram.com/joaorezenderibeiro/" target="_blank">
+                                        <i class="fa-brands fa-instagram fa-xl"></i>
+                                    </a>
+
+                                    <a href={whatsappLink} target="_blank">
+                                        <i class="fa-brands fa-whatsapp fa-xl"></i>
+                                    </a>
+                                    <a href={whatsappLink} target="_blank">
+                                        <i class="fa-regular fa-envelope fa-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="md:p-[3rem]">
+                    <div class="flex flex-col md:flex-row items-center md:space-x-4">
+                        <div class="md:w-1/1">
+                            <img src="./assets/images/team/gustavo.svg" alt={name}
+                                class="hover:scale-105 hover:shadow-sm transition-all duration-500 " />
+                        </div>
+                        <div class="md:w-[80%] md:pl-8">
+                            <div class="space-y-2 text-center md:text-left">
+                                <h1 class="mt-5 text-[30px] text-[#21243D]">Dr. Gustavo Santos Ribeiro</h1>
+                                <h3 class="text-xl">Sócio</h3>
+                                <p class="text-[17px] text-justify text-[#8B94A1]">
+                                    Dr. Gustavo Santos Ribeiro é um advogado especializado em responsabilidade civil,
+                                    danos morais e materiais, formado em Direito por uma universidade de renome e
+                                    distinguido por sua excelência acadêmica. Ele possui especializações em Direito do
+                                    Consumidor e Direito Processual Civil, áreas nas quais desenvolveu vasto
+                                    conhecimento, especialmente em ações contra instituições financeiras, educacionais,
+                                    revendedoras de veículos e companhias aéreas. Dr. Gustavo também é certificado para
+                                    manejar casos de isenção de imposto de renda em situações de doença grave,
+                                    evidenciando sua competência e comprometimento em atender às necessidades
+                                    específicas de seus clientes.
+                                </p>
+                                <p class="text-xl text-black">Redes sociais:</p>
+                                <div
+                                    class="flex justify-center pb-10 md:justify-start items-center text-[#CC926A] gap-4 ">
+
+                                    <a href="https://www.linkedin.com/in/gustavo-santos-ribeiro-31b652196/"
+                                        target="_blank">
+                                        <i class="fa-brands fa-linkedin fa-xl"></i>
+                                    </a>
+
+
+                                    <a href="https://www.instagram.com/gustavo_pleonasmo/" target="_blank">
+                                        <i class="fa-brands fa-instagram fa-xl"></i>
+                                    </a>
+
+                                    <a href={whatsappLink} target="_blank">
+                                        <i class="fa-brands fa-whatsapp fa-xl"></i>
+                                    </a>
+                                    <a href={whatsappLink} target="_blank">
+                                        <i class="fa-regular fa-envelope fa-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Content -->
+
+        <hr class="divider-y divider-zinc-100" />
+
+        <!-- WhatsApp Button -->
+        <a href="https://api.whatsapp.com/send?phone=5512991604267&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+            target="_blank"
+            class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300">
+            <i class="fa-brands fa-whatsapp fa-2xl"></i>
+        </a>
+        <!-- Footer-->
+        <footer>
+            <div class="flex flex-col lg:flex-row w-full justify-around bg-zinc-950 px-4 sm:px-16 py-10">
+                <div class="w-4/5 mb-10 md:w-64">
+                    <img src='./assets/images/logo/mr-logo-full.png' alt="logo" width={200} />
+                </div>
+                <div class="flex flex-col gap-8 lg:flex-row sm:justify-around sm:gap-12 pr-4 ">
+                    <div>
+                        <h3 class="text-zinc-300 text-lg sm:text-xl mb-4 font-bold">
+                            Acesso rápido
+                        </h3>
+                        <ul class="list-none antialiased w-54 sm:w-54">
+                            <li class="text-zinc-300">
+                                <a class="hover:text-zinc-400 transition duration-500 hover:duration-500" href="#">
+                                    Voltar para o início
+                                </a>
+                            </li>
+                            <li class="text-zinc-300">
+                                <a class="hover:text-zinc-400transition duration-500 hover:duration-500" href="/#areas">
+                                    Nossas áreas de atuação
+                                </a>
+                            </li>
+                            <li class="text-zinc-300">
+                                <a class="hover:text-zinc-400 transition duration-500 hover:duration-500" href="/team">
+                                    Conheça nossos profissionais
+                                </a>
+                            </li>
+                            <li class="text-zinc-300">
+                                <a class="hover:text-zinc-400transition duration-500 hover:duration-500"
+                                    href="/contact">
+                                    Fale conosco
+                                </a>
+                            </li>
+                            <li class="text-zinc-300">
+                                <a class="hover:text-zinc-400 transition duration-500 hover:duration-500"
+                                    href="/about-us">
+                                    Sobre nós
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-zinc-300 text-lg sm:text-xl mb-4 font-bold">
+                            Nosso endereço
+                        </h3>
+                        <span class="antialiased text-zinc-300 w-54 sm:w-64">
+                            <a class="hover:text-zinc-400 transition duration-500 hover:duration-500 "
+                                href="https://www.google.com/maps/place/R.+Ant%C3%B4nio+Aleixo+da+Silva,+1880+-+Jardim+Sat%C3%A9lite,+S%C3%A3o+Jos%C3%A9+dos+Campos+-+SP,+12231-650/@-23.2267371,-45.8812299,17z/data=!3m1!4b1!4m6!3m5!1s0x94cc4ae9c6bf8893:0x1ee224b1209f7bfa!8m2!3d-23.2267371!4d-45.878655!16s%2Fg%2F11f3vsvsqk?entry=ttu"
+                                target="_blank">
+                                Rua Antônio Aleixo da Silva, 1880 Jardim Satélite, São José dos
+                                Campos - SP, CEP 12231-650
+                            </a>
+                        </span>
+                    </div>
+                    <div class="flex flex-col md:flex">
+                        <h3 class="text-zinc-300 text-lg sm:text-xl mb-4 font-bold">
+                            Entre em contato
+                        </h3>
+                        <ul class="list-none antialiased">
+                            <li class="text-zinc-300">
+                                <a class="flex items-center hover:text-zinc-400 transition duration-500 hover:duration-500"
+                                    href="https://api.whatsapp.com/send?phone=5512991604267&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+                                    target="_blank">
+                                    <i class="fa-brands fa-whatsapp mr-2"></i>
+                                    (12) 9 9160-4267
+                                </a>
+                            </li>
+                            <!-- <li class='text-zinc-300'>
+                            <a class='flex mt-2 mb-2 hover:text-[#cca185] transition duration-500 hover:duration-500'
+                                href='#'>
+                                <i class="fa-brands fa-instagram"></i>
+                                @moraisribeiroadvjur
+                            </a>
+                        </li>  -->
+                            <li class="text-zinc-300">
+                                <a class="flex items-center mt-2 hover:text-zinc-400 transition duration-500 hover:duration-500"
+                                    href="mailto:contato@moraisribeiroadv.com">
+                                    <i class="fa-regular fa-envelope mr-2"></i>
+                                    contato@moraisribeiroadv.com
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer-->
+
+        <script src="assets/main.js"></script>
+
+</body>
+
+</html>

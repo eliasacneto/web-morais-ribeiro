@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áreas de atuação - Morais & Ribeiro</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1a827209e1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="font-marcellus">
+
+    <!-- Navbar -->
+    <div class="">
+        <!-- Mobile nav-->
+        <div class="flex fixed items-center z-40 bg-slate-950 w-screen lg:hidden px-6 py-3 shadow-md">
+            <a href="#" class="">
+                <img class="w-52" src="./assets/images/logo/mr-logo.jpg" alt="logo"></a>
+
+            <button id="navMenuToggler"
+                class="fixed flex items-center top-2 right-0 p-4 z-40 lg:hidden lg:bg-none  rounded-lg">
+                <i class="fa-solid fa-bars fa-2xl text-[#d9d9d9]"></i>
+            </button>
+            <hr class="divide-y divide-zinc-400" />
+        </div>
+
+        <header
+            class="fixed z-10 w-full h-12 md:h-24 px-8 md:px-12 lg:px-8 xl:px-28 flex gap-8 items-center font-marcellus bg-slate-950 text-zinc-300 antialiased font-bold shadow shadow-[#d9d9d9] ">
+            <a href="#" class="">
+                <img class="w-56 " src="./assets/images/logo/mr-logo.jpg" alt="logo"></a>
+            <div id="navMenu"
+                class="fixed lg:relative top-0 left-0 bg-slate-900 lg:bg-slate-950 bg-opacity-95 text-center overflow-hidden transition-all duration-500 flex flex-col lg:flex-row gap-8 items-center justify-center w-full h-0 opacity-0 z-10 lg:h-full lg:opacity-100 ">
+                <nav class="lg:flex-1 flex justify-end gap-8 flex-col lg:flex-row lg:ml-16 ">
+                    <a class="text-zinc-300 hover:text-zinc-400 transition-all duration-500"
+                        href="index.html">Início</a>
+                    <a class="text-zinc-300 hover:text-zinc-400  transition-all duration-500 px-"
+                        href="areas.html">Áreas de atuação</a>
+                    <a class="text-zinc-300 hover:text-zinc-400  transition-all duration-500"
+                        href="team.html">Profissionais</a>
+                    <a class="text-zinc-300 hover:text-zinc-400  transition-all duration-500" href="about.html">Sobre
+                        nós</a>
+                </nav>
+                <div class="flex items-center flex-col gap-5 lg:flex-row lg:gap-0 ">
+                    <a href="contact.html"
+                        class="bg-[#d9d9d9] font-bold text-zinc-900 py-3 px-10 rounded-tl-[1rem] rounded-br-[1rem] hover:bg-zinc-500 hover:text-white transition duration-500 hover:duration-500"
+                        onClick={closeMenu}>
+                        Contato
+                    </a>
+                </div>
+
+            </div>
+        </header>
+        <hr class="divide-y divide-zinc-400" />
+        <!-- End Navbar-->
+
+        <!--Section title-->
+        <div class="flex flex-col justify-center items-center bg-slate-900 h-80 mt-10">
+            <h1 class="text-white text-4xl lg:text-5xl mb-4">Áreas de atuação
+            </h1>
+            <p class="text-zinc-400 text-lg lg:w-[30rem] xl:w-[40rem] text-center">
+                Conheças as áreas onde somos especialistas
+            </p>
+        </div>
+        <!-- End Section title-->
+
+        <div class="pt-[5rem] pb-[5rem] bg-gray-100">
+            <div
+                class="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-[3rem] gap-[3rem] items-center">
+                <div
+                    class="p-7 border-2 text-center border-zinc-100 bg-white rounded-tr-[3rem] rounded-bl-[3rem] hover:border-2 hover:border-zinc-300 hover:shadow-sm transition-all duration-500 md:min-h-64">
+                    <div class="flex flex-col items-center">
+                        <Image src="./assets/images/icons/lawIcon.svg" alt="icone de martelo" class="mb-3" />
+                        <h1 class="mb-3 text-[#192432] text-[20px]">Direito Civil Geral</h1>
+                        <p class="text-[16px] text-[#8B94A1]">É o ramo do direito que regula as relações pessoais e
+                            patrimoniais entre indivíduos em sociedade, abrangendo aspectos como contratos, propriedade,
+                            família e obrigações.</p>
+                    </div>
+                </div>
+                <div
+                    class="p-7 border-2 text-center border-zinc-100 bg-white rounded-tr-[3rem] rounded-bl-[3rem] hover:border-2 hover:border-zinc-300 hover:shadow-sm transition-all duration-500 md:min-h-64">
+                    <div class="flex flex-col items-center">
+                        <Image src="./assets/images/icons/lawIcon.svg" alt="icone de martelo" class="mb-3" />
+                        <h1 class="mb-3 text-[#192432] text-[20px]">Direito de Família</h1>
+                        <p class="text-[16px] text-[#8B94A1]">É o ramo do direito que trata das relações familiares,
+                            incluindo casamento, divórcio, guarda dos filhos, pensão alimentícia e sucessões.</p>
+                    </div>
+                </div>
+                <div
+                    class="p-7 border-2 text-center border-zinc-100 bg-white rounded-tr-[3rem] rounded-bl-[3rem] hover:border-2 hover:border-zinc-300 hover:shadow-sm transition-all duration-500 md:min-h-64">
+                    <div class="flex flex-col items-center">
+                        <Image src="./assets/images/icons/lawIcon.svg" alt="icone de martelo" class="mb-3" />
+                        <h1 class="mb-3 text-[#192432] text-[20px]">Direito Tributário</h1>
+                        <p class="text-[16px] text-[#8B94A1]">É o ramo do direito que regula a arrecadação de tributos
+                            (como impostos, taxas e contribuições) pelo Estado, bem como as relações entre o fisco e os
+                            contribuintes.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="p-7 border-2 text-center border-zinc-100 bg-white rounded-tr-[3rem] rounded-bl-[3rem] hover:border-2 hover:border-zinc-300 hover:shadow-sm transition-all duration-500 md:min-h-64">
+                    <div class="flex flex-col items-center">
+                        <Image src="./assets/images/icons/lawIcon.svg" alt="icone de martelo" class="mb-3" />
+                        <h1 class="mb-3 text-[#192432] text-[20px]">Direito Empresarial</h1>
+                        <p class="text-[16px] text-[#8B94A1]">É o ramo do direito focado nas normas que regulamentam a
+                            atividade das empresas e dos empresários, incluindo falências, contratos comerciais e
+                            propriedade intelectual.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="p-7 border-2 text-center border-zinc-100 bg-white rounded-tr-[3rem] rounded-bl-[3rem] hover:border-2 hover:border-zinc-300 hover:shadow-sm transition-all duration-500 md:min-h-64">
+                    <div class="flex flex-col items-center">
+                        <Image src="./assets/images/icons/lawIcon.svg" alt="icone de martelo" class="mb-3" />
+                        <h1 class="mb-3 text-[#192432] text-[20px]">Direito do Trabalho</h1>
+                        <p class="text-[16px] text-[#8B94A1]">É o ramo do direito que regula as relações de trabalho
+                            entre empregadores e empregados, abordando questões como contratos de trabalho, direitos
+                            trabalhistas, condições de trabalho, e resolução de disputas laborais.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="p-7 border-2 text-center border-zinc-100 bg-white rounded-tr-[3rem] rounded-bl-[3rem] hover:border-2 hover:border-zinc-300 hover:shadow-sm transition-all duration-500 md:min-h-64">
+                    <div class="flex flex-col items-center">
+                        <Image src="./assets/images/icons/lawIcon.svg" alt="icone de martelo" class="mb-3" />
+                        <h1 class="mb-3 text-[#192432] text-[20px]">Direito do Consumidor</h1>
+                        <p class="text-[16px] text-[#8B94A1]">É o ramo do direito que protege os interesses dos
+                            consumidores, regulando as relações de consumo e assegurando o cumprimento de normas de
+                            proteção ao consumidor.</p>
+                    </div>
+                </div>
+
+
+                <div
+                    class="p-7 border-2 text-center border-zinc-100 bg-white rounded-tr-[3rem] rounded-bl-[3rem] hover:border-2 hover:border-zinc-300 hover:shadow-sm transition-all duration-500 md:min-h-64">
+                    <div class="flex flex-col items-center">
+                        <Image src="./assets/images/icons/lawIcon.svg" alt="icone de martelo" class="mb-3" />
+                        <h1 class="mb-3 text-[#192432] text-[20px]">Direito Criminal</h1>
+                        <p class="text-[16px] text-[#8B94A1]">É o ramo do direito que define condutas consideradas
+                            crimes e estabelece as penalidades aplicáveis a quem as pratica.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="p-7 border-2 text-center border-zinc-100 bg-white rounded-tr-[3rem] rounded-bl-[3rem] hover:border-2 hover:border-zinc-300 hover:shadow-sm transition-all duration-500 md:min-h-64">
+                    <div class="flex flex-col items-center">
+                        <Image src="./assets/images/icons/lawIcon.svg" alt="icone de martelo" class="mb-3" />
+                        <h1 class="mb-3 text-[#192432] text-[20px]">Direito Previdenciário</h1>
+                        <p class="text-[16px] text-[#8B94A1]">É o ramo do direito que regula os sistemas de seguridade
+                            social, incluindo aposentadorias, pensões, auxílios e benefícios sociais, visando proteger
+                            os cidadãos em situações de vulnerabilidade.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="p-7 border-2 text-center border-zinc-100 bg-white rounded-tr-[3rem] rounded-bl-[3rem] hover:border-2 hover:border-zinc-300 hover:shadow-sm transition-all duration-500 md:min-h-64">
+                    <div class="flex flex-col items-center">
+                        <Image src="./assets/images/icons/lawIcon.svg" alt="icone de martelo" class="mb-3" />
+                        <h1 class="mb-3 text-[#192432] text-[20px]">Direito Internacional</h1>
+                        <p class="text-[16px] text-[#8B94A1]">É o ramo do direito que trata das leis e normas que
+                            regulam as relações entre nações, abordando questões como tratados, diplomacia, conflitos e
+                            comércio internacional.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CTA-->
+        <div class="bg-[#0E0E0E]">
+            <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+                <div class="md:w-1/2">
+                    <img src='./assets/images/all/helpimg.svg' alt="imagem" />
+                </div>
+                <div class="md:w-1/2 md:pr-6 mb-8 md:mb-0">
+                    <h1 class="text-2xl mt-3 leading-snug md:text-[34px] text-center md:text-center text-white mb-1">
+                        Está buscando ajuda de um advogado?
+                    </h1>
+                    <div class="flex justify-center md:justify-center items-center">
+                        <a href="contact.html"
+                            class="bg-[#d9d9d9] text-zinc-900 font-bold py-3 px-10 rounded-tl-[15px] rounded-br-[15px] mt-5 hover:bg-zinc-500 hover:text-white transition duration-500 cursor-pointer">
+                            Fale conosco agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End CTA -->
+
+        <hr class="divider-y divider-zinc-100" />
+
+        <!-- WhatsApp Button -->
+        <a href="https://api.whatsapp.com/send?phone=5512991604267&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+            target="_blank"
+            class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300">
+            <i class="fa-brands fa-whatsapp fa-2xl"></i>
+        </a>
+        <!-- Footer-->
+        <footer>
+            <div class="flex flex-col lg:flex-row w-full justify-around bg-zinc-950 px-4 sm:px-16 py-10">
+                <div class="w-4/5 mb-10 md:w-64">
+                    <img src='./assets/images/logo/mr-logo-full.png' alt="logo" width={200} />
+                </div>
+                <div class="flex flex-col gap-8 lg:flex-row sm:justify-around sm:gap-12 pr-4 ">
+                    <div>
+                        <h3 class="text-zinc-300 text-lg sm:text-xl mb-4 font-bold">
+                            Acesso rápido
+                        </h3>
+                        <ul class="list-none antialiased w-54 sm:w-54">
+                            <li class="text-zinc-300">
+                                <a class="hover:text-zinc-400 transition duration-500 hover:duration-500" href="#">
+                                    Voltar para o início
+                                </a>
+                            </li>
+                            <li class="text-zinc-300">
+                                <a class="hover:text-zinc-400transition duration-500 hover:duration-500" href="/#areas">
+                                    Nossas áreas de atuação
+                                </a>
+                            </li>
+                            <li class="text-zinc-300">
+                                <a class="hover:text-zinc-400 transition duration-500 hover:duration-500" href="/team">
+                                    Conheça nossos profissionais
+                                </a>
+                            </li>
+                            <li class="text-zinc-300">
+                                <a class="hover:text-zinc-400transition duration-500 hover:duration-500"
+                                    href="/contact">
+                                    Fale conosco
+                                </a>
+                            </li>
+                            <li class="text-zinc-300">
+                                <a class="hover:text-zinc-400 transition duration-500 hover:duration-500"
+                                    href="/about-us">
+                                    Sobre nós
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-zinc-300 text-lg sm:text-xl mb-4 font-bold">
+                            Nosso endereço
+                        </h3>
+                        <span class="antialiased text-zinc-300 w-54 sm:w-64">
+                            <a class="hover:text-zinc-400 transition duration-500 hover:duration-500 "
+                                href="https://www.google.com/maps/place/R.+Ant%C3%B4nio+Aleixo+da+Silva,+1880+-+Jardim+Sat%C3%A9lite,+S%C3%A3o+Jos%C3%A9+dos+Campos+-+SP,+12231-650/@-23.2267371,-45.8812299,17z/data=!3m1!4b1!4m6!3m5!1s0x94cc4ae9c6bf8893:0x1ee224b1209f7bfa!8m2!3d-23.2267371!4d-45.878655!16s%2Fg%2F11f3vsvsqk?entry=ttu"
+                                target="_blank">
+                                Rua Antônio Aleixo da Silva, 1880 Jardim Satélite, São José dos
+                                Campos - SP, CEP 12231-650
+                            </a>
+                        </span>
+                    </div>
+                    <div class="flex flex-col md:flex">
+                        <h3 class="text-zinc-300 text-lg sm:text-xl mb-4 font-bold">
+                            Entre em contato
+                        </h3>
+                        <ul class="list-none antialiased">
+                            <li class="text-zinc-300">
+                                <a class="flex items-center hover:text-zinc-400 transition duration-500 hover:duration-500"
+                                    href="https://api.whatsapp.com/send?phone=5512991604267&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+                                    target="_blank">
+                                    <i class="fa-brands fa-whatsapp mr-2"></i>
+                                    (12) 9 9160-4267
+                                </a>
+                            </li>
+                            <!-- <li class='text-zinc-300'>
+                            <a class='flex mt-2 mb-2 hover:text-[#cca185] transition duration-500 hover:duration-500'
+                                href='#'>
+                                <i class="fa-brands fa-instagram"></i>
+                                @moraisribeiroadvjur
+                            </a>
+                        </li>  -->
+                            <li class="text-zinc-300">
+                                <a class="flex items-center mt-2 hover:text-zinc-400 transition duration-500 hover:duration-500"
+                                    href="mailto:contato@moraisribeiroadv.com">
+                                    <i class="fa-regular fa-envelope mr-2"></i>
+                                    contato@moraisribeiroadv.com
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer-->
+
+        <script src="assets/main.js"></script>
+
+</body>
+
+</html>
